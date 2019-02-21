@@ -24,6 +24,8 @@
 
 import random 
 
+impares = []
+pares = []
 lista = []
 i = 1 
 
@@ -36,13 +38,15 @@ print (f'Essa é minha lista: {lista}')
 
 for i in lista:
     if i%2 == 0:
-        # lista_pares= [i,i+1]
-        # print(lista_pares)
-        print(f'{i} é par')
+        pares.append(i)
+        # print(f'{i} é par')
     else:
-        print(f'{i} é ímpar')
+        impares.append(i)
+        # print(f'{i} é ímpar')
+print(f"Pares: {pares}")
+print(f"Ímpares: {impares}")
 
-
+#Não colocar os prints dentro do for, porque senão ele vai repetir a lista em cada ocorrência. Acaba numa escadinha.
 # Deu certo, mas eu queria que a resposta saísse numa nova lista de pares e uma nova lista de ímpares 
 
 
